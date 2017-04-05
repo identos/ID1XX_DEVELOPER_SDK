@@ -32,12 +32,14 @@ typedef NS_ENUM(NSUInteger, AKBankCardType) {
  * This property for the Name of the card holder.
  */
 @property (nonatomic, strong) NSString* name;
-
-
+/**
+ * This property for the expiration Year.
+ */
 @property (nonatomic, strong) NSString * expirationYear;
-
+/**
+ * This property for the expiration Month.
+ */
 @property (nonatomic, strong) NSString * expirationMonth;
-
 /**
  @note not populbated by readCard
  */

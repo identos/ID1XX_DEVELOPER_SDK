@@ -8,7 +8,16 @@
 
 #import <AppIdKey/AppIdKey.h>
 
+/** 
+ * http://www.gematik.de/cms/de/spezifikation/release_0_5_3/release_0_5_3_egk/dokumente_egk_r053.jsp
+ */
+
 @interface AKHealthCard : AKCard
+
+
+@property (nonatomic, strong) NSString * generalInsuranceDataXML;
+@property (nonatomic, strong) NSString * personalInsuranceXML;
+
 
 /**
  * This property
@@ -35,6 +44,21 @@
  * gender
  */
 @property (nonatomic, strong) NSString* gender;
+/**
+ * This property
+ * name prefix
+ */
+@property (nonatomic, strong) NSString* vorsatzwort;
+/**
+ * This property
+ * name affix
+ */
+@property (nonatomic, strong) NSString* namenszusatz;
+/**
+ * This property
+ * name titel
+ */
+@property (nonatomic, strong) NSString* titel;
 /**
  * This property
  * Address Information
@@ -80,6 +104,10 @@
  * the number of Insurance
  */
 @property (nonatomic, strong) NSString* IKNumber;
+/**
+ * This property
+ * the 2nd number of Insurance if available
+ */
 @property (nonatomic, strong) NSString* IKNumber2;
 /**
  * This property
@@ -121,6 +149,10 @@
  */
 @property (nonatomic, strong) NSString* isStationery;
 
+@property (nonatomic, strong) NSString* AerztlicheVersorgung;
+@property (nonatomic, strong) NSString* ZahnaerztlicheVersorgung;
+@property (nonatomic, strong) NSString* VeranlassteLeistungen;
+@property (nonatomic, strong) NSString* WOP;
 
 -(NSData*)readCertificate;
 

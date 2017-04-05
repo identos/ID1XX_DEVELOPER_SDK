@@ -15,3 +15,6 @@
 #import <AppIdKey/AKBankCard.h>
 #import <AppIdKey/AKAustriaECard.h>
 #import <AppIdKey/AKHealthCard.h>
+#import <AppIdKey/AKCardCommand.h>
+#import <AppIdKey/AKTransferCommand.h>
+#import <AppIdKey/AKAnswerToResetCommand.h>

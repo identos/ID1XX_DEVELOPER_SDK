@@ -1,7 +1,7 @@
 
 ## IDENTOS
 #### www.identos.com
-###### Copyright 2015
+###### Copyright 2017
 
 ### Overview
 This framework is provided by IDENTOS for use exclusively with the APPIDKEY ID100 Card Reader, and is governed by the terms of use granted by license to users of the ID100 product. 
@@ -25,22 +25,41 @@ Please select 'Watch' on this repository for the latest updates
 ##### *Info.plist Protocol
 
 ```
-	<key>UISupportedExternalAccessoryProtocols</key>
-	<array>
-		<string>com.scapiscreader.iOS.a.a.a</string>
-	</array>
+<key>UISupportedExternalAccessoryProtocols</key>
+<array>
+	<string>com.scapiscreader.iOS.a.a.a</string>
+</array>
 ```
+
 ### Using the Framework
 
-#### ID100 Terminal Status
+#### Terminal Presence
 
-```[[AppIdKeyController sharedInstance] isDeviceConnected]```
+##### Current Status
 
-#### Smart Card Status
+`[[AppIdKeyController sharedInstance] isDeviceConnected]`
 
-```[[AppIdKeyController sharedInstance] isCardAvailable]```
 
-#### Read Card Type
+##### Observers
+
+```
+[[AppIdKeyController sharedInstance] setOnDeviceConnected:^{
+	// device was connected
+}];
+
+[[AppIdKeyController sharedInstance] setOnDeviceDisconnected:^{
+	// device was disconnected
+}];
+```
+
+
+#### Physical Interface
+
+##### Smart Card Status
+
+`[[AppIdKeyController sharedInstance] isCardAvailable]`
+
+##### Read Card Type
 
 ``` 
 switch( [[AppIdKeyController sharedInstance] cardType] ) { 
@@ -54,19 +73,19 @@ switch( [[AppIdKeyController sharedInstance] cardType] ) {
 }
 ```
 
-#### Read Card Data
+##### Read Card Data
 ```
 AKCard * card = [[AppIdKeyController sharedInstance] readCard];
 ```
 
-#### Read Health Card Certificate 
+##### Read Health Card Certificate 
 
 ```
 AKHealthCard * healthCard;
 NSData * cert = [healthCard readCertificate];
 ```
 
-#### Read Credit Card Track2 Data
+##### Read Credit Card Track2 Data
 ```
 AKBankCard * bankCard;
 if( bankCard.type == AKCreditCard ) {
@@ -75,5 +94,54 @@ if( bankCard.type == AKCreditCard ) {
 }
 ```
 
+##### APDU 
 
+```
+// example test for Credit Card
+NSData * data = [@"1PAY.SYS.DDF01" dataUsingEncoding:NSASCIIStringEncoding];
+AKCommandAPDU * apdu = [AKCommandAPDU withCls:0x0 ins:0xA4 p1:0x04 p2:0x0 data:data Le:0x0];
+apdu.type = AKTransferTypeSendReceiveData;
+
+AKTransferCommand *transfer = [AKTransferCommand transferAPDU:apdu];
+
+NSData * data = [[AppIdKeyController sharedInstance] performCommand:transfer];
+
+if (transfer.status == AKTerminalCommandSuccess) {
+	// terminal successfully transferred to card
+	
+	if([transfer.response status] == AKResponseNormal) {
+		// card responded nornally
+		ISLog(@"command success (%02X %02X %@)", transfer.response.sw1, transfer.response.sw2, transfer.response.data);
+	}
+}
+else {
+	ISLog(@"terminal failed (%lu)", (unsigned long)transfer.status);
+}
+
+```		
+
+#### NFC Interface
+
+
+##### Card Discovery (+ Read CC Example)
+
+```
+
+[[AppIdKeyController sharedInstance] startDiscovery:^(id<AKNFCCard> card, NSError *error) {
+
+	// example test for Credit Card
+	NSData * paysys = [@"1PAY.SYS.DDF01" dataUsingEncoding:NSASCIIStringEncoding];
+	AKCommandAPDU *apdu = [AKCommandAPDU withCls:0x0 ins:0xA4 p1:0x04 p2:0x0 data:paysys Le:0x0];
+	apdu.type = AKTransferTypeSendReceiveData;
+	
+	AKNFCTransferCommand *transfer = [AKNFCTransferCommand transferAPDU:apdu];
+	NSData * data = [card performCommand:transfer];
+	ISLog(@"NFC 1PAY.SYS.DDF01: %@", data);        
+}];
+
+```
+
+##### Stop Discovery
+
+`[[AppIdKeyController sharedInstance] stopDiscovery];`
 

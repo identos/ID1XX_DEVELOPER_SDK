@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ * structure of the CArd Type
+ */
+
 typedef NS_ENUM(NSUInteger, AKCardType) {
     AKNoCard,
     
@@ -19,6 +23,10 @@ typedef NS_ENUM(NSUInteger, AKCardType) {
 
 @interface AKCard : NSObject  <NSObject>
 
+
+/**
+ * this method for read any cards
+ */
 @property (nonatomic) AKCardType cardType;
 
 @end
