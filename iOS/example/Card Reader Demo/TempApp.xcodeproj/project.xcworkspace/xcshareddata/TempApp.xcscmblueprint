@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6049A05C4357C37121EEBDB54661BAAC0FDA13E1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6049A05C4357C37121EEBDB54661BAAC0FDA13E1" : 0,
+    "096A2B59A46FF00E040CFF12AA677045DB8CE98D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "47624EAF-A0C1-4A2F-8386-33131C9642C5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6049A05C4357C37121EEBDB54661BAAC0FDA13E1" : "mPOS\/",
+    "096A2B59A46FF00E040CFF12AA677045DB8CE98D" : "Documentation\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TempApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "tempApp4Lib\/Demo App\/TempApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:identos\/Documentation.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "096A2B59A46FF00E040CFF12AA677045DB8CE98D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:identos\/mPOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6049A05C4357C37121EEBDB54661BAAC0FDA13E1"
+    }
+  ]
+}

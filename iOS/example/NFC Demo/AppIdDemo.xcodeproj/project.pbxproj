@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70DFD3F91C4D314F000855D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DFD3F81C4D314F000855D3 /* main.m */; };
+		70DFD3FC1C4D314F000855D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DFD3FB1C4D314F000855D3 /* AppDelegate.m */; };
+		70DFD3FF1C4D314F000855D3 /* WaitForTerminalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DFD3FE1C4D314F000855D3 /* WaitForTerminalViewController.m */; };
+		70DFD4041C4D314F000855D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DFD4031C4D314F000855D3 /* Assets.xcassets */; };
+		70DFD4071C4D314F000855D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DFD4051C4D314F000855D3 /* LaunchScreen.storyboard */; };
+		70DFD4131C4D330B000855D3 /* WaitForTerminalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70DFD4121C4D330B000855D3 /* WaitForTerminalViewController.xib */; };
+		70DFD4151C4D333F000855D3 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70DFD4141C4D333F000855D3 /* ExternalAccessory.framework */; };
+		70DFD4191C4D3426000855D3 /* NFCCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DFD4171C4D3426000855D3 /* NFCCardViewController.m */; };
+		70DFD41A1C4D3426000855D3 /* NFCCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70DFD4181C4D3426000855D3 /* NFCCardViewController.xib */; };
+		B3E683E81EDDE64800582EEE /* AppIdKey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E683E71EDDE64800582EEE /* AppIdKey.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7055946E1DA42B68003816D4 /* AppIdDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppIdDemo.entitlements; sourceTree = "<group>"; };
+		70DFD3F41C4D314F000855D3 /* AppIdDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIdDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70DFD3F81C4D314F000855D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70DFD3FA1C4D314F000855D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70DFD3FB1C4D314F000855D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		70DFD3FD1C4D314F000855D3 /* WaitForTerminalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaitForTerminalViewController.h; sourceTree = "<group>"; };
+		70DFD3FE1C4D314F000855D3 /* WaitForTerminalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaitForTerminalViewController.m; sourceTree = "<group>"; };
+		70DFD4031C4D314F000855D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70DFD4061C4D314F000855D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70DFD4081C4D314F000855D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70DFD4121C4D330B000855D3 /* WaitForTerminalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaitForTerminalViewController.xib; sourceTree = "<group>"; };
+		70DFD4141C4D333F000855D3 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		70DFD4161C4D3426000855D3 /* NFCCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NFCCardViewController.h; sourceTree = "<group>"; };
+		70DFD4171C4D3426000855D3 /* NFCCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NFCCardViewController.m; sourceTree = "<group>"; };
+		70DFD4181C4D3426000855D3 /* NFCCardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NFCCardViewController.xib; sourceTree = "<group>"; };
+		B3E683E71EDDE64800582EEE /* AppIdKey.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppIdKey.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70DFD3F11C4D314F000855D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70DFD4151C4D333F000855D3 /* ExternalAccessory.framework in Frameworks */,
+				B3E683E81EDDE64800582EEE /* AppIdKey.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70DFD3EB1C4D314F000855D3 = {
+			isa = PBXGroup;
+			children = (
+				70DFD3F61C4D314F000855D3 /* AppIdDemo */,
+				70DFD3F51C4D314F000855D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70DFD3F51C4D314F000855D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70DFD3F41C4D314F000855D3 /* AppIdDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70DFD3F61C4D314F000855D3 /* AppIdDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7055946E1DA42B68003816D4 /* AppIdDemo.entitlements */,
+				70DFD41C1C4D3438000855D3 /* Frameworks */,
+				70DFD3FA1C4D314F000855D3 /* AppDelegate.h */,
+				70DFD3FB1C4D314F000855D3 /* AppDelegate.m */,
+				70DFD41B1C4D342B000855D3 /* Controllers */,
+				70DFD3F71C4D314F000855D3 /* Supporting Files */,
+			);
+			path = AppIdDemo;
+			sourceTree = "<group>";
+		};
+		70DFD3F71C4D314F000855D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70DFD4031C4D314F000855D3 /* Assets.xcassets */,
+				70DFD4051C4D314F000855D3 /* LaunchScreen.storyboard */,
+				70DFD4081C4D314F000855D3 /* Info.plist */,
+				70DFD3F81C4D314F000855D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70DFD41B1C4D342B000855D3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70DFD3FD1C4D314F000855D3 /* WaitForTerminalViewController.h */,
+				70DFD3FE1C4D314F000855D3 /* WaitForTerminalViewController.m */,
+				70DFD4121C4D330B000855D3 /* WaitForTerminalViewController.xib */,
+				70DFD4161C4D3426000855D3 /* NFCCardViewController.h */,
+				70DFD4171C4D3426000855D3 /* NFCCardViewController.m */,
+				70DFD4181C4D3426000855D3 /* NFCCardViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		70DFD41C1C4D3438000855D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3E683E71EDDE64800582EEE /* AppIdKey.framework */,
+				70DFD4141C4D333F000855D3 /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70DFD3F31C4D314F000855D3 /* AppIdDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70DFD40B1C4D314F000855D3 /* Build configuration list for PBXNativeTarget "AppIdDemo" */;
+			buildPhases = (
+				70DFD3F01C4D314F000855D3 /* Sources */,
+				70DFD3F11C4D314F000855D3 /* Frameworks */,
+				70DFD3F21C4D314F000855D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppIdDemo;
+			productName = AppIdDemo;
+			productReference = 70DFD3F41C4D314F000855D3 /* AppIdDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70DFD3EC1C4D314F000855D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = identos;
+				TargetAttributes = {
+					70DFD3F31C4D314F000855D3 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = WYLCTKCLY7;
+					};
+				};
+			};
+			buildConfigurationList = 70DFD3EF1C4D314F000855D3 /* Build configuration list for PBXProject "AppIdDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70DFD3EB1C4D314F000855D3;
+			productRefGroup = 70DFD3F51C4D314F000855D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70DFD3F31C4D314F000855D3 /* AppIdDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70DFD3F21C4D314F000855D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70DFD4131C4D330B000855D3 /* WaitForTerminalViewController.xib in Resources */,
+				70DFD4071C4D314F000855D3 /* LaunchScreen.storyboard in Resources */,
+				70DFD41A1C4D3426000855D3 /* NFCCardViewController.xib in Resources */,
+				70DFD4041C4D314F000855D3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70DFD3F01C4D314F000855D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70DFD3FF1C4D314F000855D3 /* WaitForTerminalViewController.m in Sources */,
+				70DFD3FC1C4D314F000855D3 /* AppDelegate.m in Sources */,
+				70DFD4191C4D3426000855D3 /* NFCCardViewController.m in Sources */,
+				70DFD3F91C4D314F000855D3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		70DFD4051C4D314F000855D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70DFD4061C4D314F000855D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70DFD4091C4D314F000855D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70DFD40A1C4D314F000855D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70DFD40C1C4D314F000855D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppIdDemo/AppIdDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WYLCTKCLY7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AppIdDemo",
+				);
+				INFOPLIST_FILE = AppIdDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.identos.ca.nfcdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		70DFD40D1C4D314F000855D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppIdDemo/AppIdDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = WYLCTKCLY7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AppIdDemo",
+				);
+				INFOPLIST_FILE = AppIdDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.identos.ca.nfcdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70DFD3EF1C4D314F000855D3 /* Build configuration list for PBXProject "AppIdDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70DFD4091C4D314F000855D3 /* Debug */,
+				70DFD40A1C4D314F000855D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70DFD40B1C4D314F000855D3 /* Build configuration list for PBXNativeTarget "AppIdDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70DFD40C1C4D314F000855D3 /* Debug */,
+				70DFD40D1C4D314F000855D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70DFD3EC1C4D314F000855D3 /* Project object */;
+}
