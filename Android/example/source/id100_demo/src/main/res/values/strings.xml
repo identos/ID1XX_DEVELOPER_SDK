@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ID100 Demo</string>
+
+    <string name="personal_data">Personal data</string>
+
+    <string name="insurance_data">Insurance data</string>
+
+    <string name="empty">No ID100s connected</string>
+    <string name="read_card_data">Read card</string>
+
+    <string name="progress_card_info">Reading card info…</string>
+    <string name="progress_card_data">Reading card data…</string>
+
+    <string name="sb_no_card_present">No card present</string>
+    <string name="sb_permission_denied">Permission denied</string>
+    <string name="sb_failed_to_open_reader">Failed to open reader!</string>
+    <string name="sb_error_invalid_card">Card not supported!</string>
+    <string name="sb_error_card_data_default">Failed to read card data!</string>
+    <string name="sb_error_card_info_default">Failed to read card info!</string>
+    <string name="sb_card_inserted">Card inserted in %1$s</string>
+    <string name="sb_card_removed">Card removed from %1$s</string>
+
+    <string name="card_type_german">German health card</string>
+    <string name="card_type_austrian">Austrian health card</string>
+    <string name="card_type_belgian">Belgian eID</string>
+    <string name="card_type_unknown">Unknown card</string>
+
+
+    <string name="action_log">Log</string>
+    <string name="action_send_log">Send log</string>
+    <string name="action_clear_log">Clear log</string>
+
+    <string name="title_activity_card_in_reader">Card in %1$s</string>
+    <string name="failed_to_read_card_info">Failed to read card info</string>
+
+</resources>
