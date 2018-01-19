@@ -56,3 +56,14 @@
 -(NSData*)processResponseData:(NSData *)resposne;
 
 @end
+
+
+@interface AKNFCRawTransferCommand : AKCardCommand
+
+@property (nonatomic, strong) NSData * input;
+@property (nonatomic, strong) NSData * output;
+
++(instancetype)withData:(NSData*)data;
+
+@end
+

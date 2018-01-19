@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "AKCard.h"
+#import "AKNFCCard.h"
 #import "AKDeviceInfo.h"
 #import "AKCardCommand.h"
 
@@ -16,21 +17,6 @@
 @class AKNFCTransferCommand;
 
 
-/**
- Protocol for AKNFCCard type
- */
-@protocol AKNFCCard <NSObject>
-
-/**
- Performs AKNFCTransferCommand command
-
- @param command The AKNFCTransferCommand
- @return NSData
- */
--(NSData*)performCommand:(AKNFCTransferCommand*)command;
-
-
-@end
 
 /**
  AKPollingState
@@ -136,11 +122,11 @@ typedef  NS_ENUM(NSUInteger, AKPollingState) {
 
 
 /**
- * Begin polling for NFC card
+ * Begin polling for NFC card, once found discovery is stopped
  *
  * @param resultBlock The block that will be run when card is detected
  */
--(void)startDiscovery:(void(^)(id<AKNFCCard>, NSError*))resultBlock;
+-(void)startDiscovery:(void(^)(AKNFCCard *, NSError*))resultBlock;
 
 
 /**

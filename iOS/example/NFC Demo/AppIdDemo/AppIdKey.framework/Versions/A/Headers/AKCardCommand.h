@@ -67,7 +67,7 @@ typedef  NS_ENUM(NSUInteger, AKTerminalCommandStatus) {
 /**
  The terminal Command
 
- @param c
+ @param c Terminal Command Byte
  @return return AKTerminalCommand
  */
 +(instancetype)terminalCommand:(unsigned char)c;

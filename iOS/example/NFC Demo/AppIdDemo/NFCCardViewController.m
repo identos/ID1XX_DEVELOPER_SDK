@@ -71,7 +71,7 @@ typedef NSUInteger NFCState;
 
 @end
 @interface NFCFOUND : NFCController
-@property (nonatomic, strong) id<AKNFCCard> card ;
+@property (nonatomic, strong) AKNFCCard * card ;
 @property (nonatomic, strong) NSError * error;
 @end
 
@@ -113,7 +113,7 @@ typedef NSUInteger NFCState;
         
         ISLog(@"starting Discovery");
         
-        [[AppIdKeyController sharedInstance] startDiscovery:^(id<AKNFCCard> card, NSError *error) {
+        [[AppIdKeyController sharedInstance] startDiscovery:^(AKNFCCard * card, NSError *error) {
 
             NFCFOUND * found = [NFCFOUND new];
             found.card = card;
@@ -160,7 +160,7 @@ typedef NSUInteger NFCState;
     
     if(self.card) {
         
-        id<AKNFCCard> card = self.card;
+        AKNFCCard * card = self.card;
         
         NSData * data;
         AKNFCTransferCommand * transfer;

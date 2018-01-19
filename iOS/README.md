@@ -151,7 +151,7 @@ else {
 	ISLog(@"terminal failed (%lu)", (unsigned long)transfer.status);
 }
 
-```		
+```
 
 #### NFC Interface
 
@@ -160,16 +160,22 @@ else {
 
 ```
 
-[[AppIdKeyController sharedInstance] startDiscovery:^(id<AKNFCCard> card, NSError *error) {
+[[AppIdKeyController sharedInstance] startDiscovery:^(AKNFCCard *card, NSError *error) {
 
-	// example test for Credit Card
-	NSData * paysys = [@"1PAY.SYS.DDF01" dataUsingEncoding:NSASCIIStringEncoding];
+	// example test for Credit Card (APDU)	
+	NSData * paysys = [@"1PAY.SYS.DDF01" dataUsingEncoding:NSASCIIStringEncoding];	
 	AKCommandAPDU *apdu = [AKCommandAPDU withCls:0x0 ins:0xA4 p1:0x04 p2:0x0 data:paysys Le:0x0];
 	apdu.type = AKTransferTypeSendReceiveData;
 	
 	AKNFCTransferCommand *transfer = [AKNFCTransferCommand transferAPDU:apdu];
 	NSData * data = [card performCommand:transfer];
 	ISLog(@"NFC 1PAY.SYS.DDF01: %@", data);        
+
+	// example send direct command
+    uint8_t SelectMF[] = { 0x00, 0xA4, 0x00, 0x0C, 0x02, 0x3F, 0x00 };
+    NSData * send_Data = [NSData dataWithBytes:SelectMF length:sizeof(SelectMF)];
+    NSData * resp_Data = [card transferData:send_Data];
+    ISLog(@"00A4000C023F00: %@", resp_Data);
 }];
 
 ```
