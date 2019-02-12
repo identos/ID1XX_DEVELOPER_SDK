@@ -25,4 +25,5 @@
 
 
 
-#define ISLog(...) [[ISLog sharedLog] log:[NSString stringWithFormat:__VA_ARGS__]]
+//#define ISLog(...) [[ISLog sharedLog] log:[NSString stringWithFormat:__VA_ARGS__]]
+#define ISLog(...) NSLog(__VA_ARGS__)

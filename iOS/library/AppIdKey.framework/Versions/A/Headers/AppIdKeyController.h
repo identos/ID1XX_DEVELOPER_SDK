@@ -123,10 +123,14 @@ typedef  NS_ENUM(NSUInteger, AKPollingState) {
 
 /**
  * Begin polling for NFC card, once found discovery is stopped
+ * @note on discovery, polling is stopped. 
  *
  * @param resultBlock The block that will be run when card is detected
+    - card Discovered card to exchange data with
+    - error Error encountered during discovery
+    - completion If card is found, this must to called when finished sending commands to the card
  */
--(void)startDiscovery:(void(^)(AKNFCCard *, NSError*))resultBlock;
+-(void)startDiscovery:(void(^)(AKNFCCard * card, NSError* error, void(^completion)()))resultBlock;
 
 
 /**
